@@ -14,7 +14,7 @@ train_set_x, train_set_y, test_set_x, test_set_y = load_dataset()
 number_of_epochs = 2000
 LR = LogisticRegression(max_number_of_iterations=number_of_epochs, learning_rate=0.005, verbose=True)
 LR.fit(train_set_x,train_set_y)
-training_loss = LR.evaluate_loss()
+training_loss = LR.costs_
 print "Training Loss = %f" %(training_loss[-1])
 training_accuracy = LR.predict(train_set_x,train_set_y)
 print "Training Accuracy = %f" %(training_accuracy) +" %"
