@@ -4,31 +4,32 @@ import numpy as np
 
 class LogisticRegression():
     """
-		Logistic Regression
+        Logistic Regression
 
-	    Parameters
-	    ----------
-	    max_number_of_iterations : int, Optional (default = 2000)
-	        Maximum number of iterations for training.
+        Parameters
+        ----------
+        max_number_of_iterations : int, Optional (default = 2000)
+        Maximum number of iterations for training.
 
-		learning_rate : int, Optional (default  = 0.01)
-			Rate at which the algorithm learns.
+        learning_rate : int, Optional (default  = 0.01)
+        Rate at which the algorithm learns.
 
-	    verbose : boolean, Optional (default=False)
-	        Controls verbosity of output:
-	        - False: No Output
-	        - True: Displays the cost at every 100th iteration.
+        verbose : boolean, Optional (default=False)
+        Controls verbosity of output:
+        - False: No Output
+        - True: Displays the cost at every 100th iteration.
 
-		Attributes
-	    ----------
-		costs_ : array, shape=[max_number_of_iterations/20]
-            Returns an array with the costs.
+        Attributes
+        ----------
+        costs_ : array, shape=[max_number_of_iterations/20]
+        Returns an array with the costs.
 
         weights_ : array, shape=[n_samples, 1]
-            Returns the weights.
+        Returns the weights.
 
         bias_: float
-            Returns the bias value.
+        Returns the bias value.
+        
     """
 
     def __init__(self, max_number_of_iterations=2000, learning_rate=0.01, verbose=False):
