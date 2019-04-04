@@ -29,7 +29,7 @@ class LogisticRegression():
 
         bias_: float
         Returns the bias value.
-        
+
     """
 
     def __init__(self, max_number_of_iterations=2000, learning_rate=0.01, verbose=False):
@@ -90,7 +90,7 @@ class LogisticRegression():
 
     def _sigmoid(self, Z):
         """
-        Perform the sigmoid activation function
+        Perform the sigmoid activation function.
         """
         return 1 / (1 + np.exp(-Z))
 
